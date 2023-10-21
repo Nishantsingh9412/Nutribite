@@ -1,0 +1,51 @@
+
+
+html {
+    position: relative;
+    min-height: 100%;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 300px;
+  }
+  
+  /* Taller footer on small screens */
+  @media (max-width: 34em) {
+      body {
+        margin-bottom: 500px;
+      }
+      .footer {
+        height: 500px;
+      }
+  }
+  
+  /* Sticky footer style and color
+  -------------------------------------------------- */
+  footer {
+    padding-top: 30px;
+    color: #131212;
+  }
+  
+  footer a {
+    color: #141313;
+    text-decoration:none;
+  }
+  
+  footer .icons a:hover , a:focus{
+    color: #609d9f;
+    text-decoration: none;
+  }
+  
+
+  /* footer a:hover, footer a:focus */
+  footer .form-control {
+      /* background-color: #1f2022; */
+      box-shadow: 0 1px 0 0 rgba(214, 35, 35, 0.1);
+      border: 2px solid #609d9f;
+      resize: none;
+      padding: 0.7em 1em;
+  }
