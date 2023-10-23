@@ -4,6 +4,7 @@ import munchies from '../images/munchies.png';
 import delivery from '../images/Deliv.png';
 import selectimg from '../images/Select-rafiki.png';
 import SearchImg from  '../images/Search-bro.png';
+import '../css/MiddleSection.css'
 
 const imageStyle = {
     height: '134px',
@@ -13,7 +14,20 @@ const imageStyle = {
 
 const MiddleSection = () => {
   return (
+        
+
     <div className='container'>
+
+<div className="floating_btn">
+    <a target="" href="https://wa.me/+918957899736">
+      <div className="contact_icon">
+        {/* <i className="fa fa-whatsapp my-float"></i> */}
+        <i class="fa-brands fa-whatsapp"></i>
+      </div>
+    </a>
+    <p className="text_icon">Talk to us?</p>
+  </div>
+
         <div className='text-center' >
             <br />
             <h1> How It Works </h1>
