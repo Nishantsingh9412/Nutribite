@@ -18,15 +18,11 @@ const MiddleSection = () => {
 
     <div className='container'>
 
-<div className="floating_btn">
-    <a target="" href="https://wa.me/+918957899736">
-      <div className="contact_icon">
-        {/* <i className="fa fa-whatsapp my-float"></i> */}
-        <i class="fa-brands fa-whatsapp"></i>
-      </div>
+    <div className="">
+    <a href="https://wa.me/+4917662020701?text=hello+123" target="_blank" className="whatsapp-btn" style={{color:'white',textDecoration:'none'}}>
+        <i class="fa-brands fa-whatsapp"></i> 
     </a>
-    <p className="text_icon">Talk to us?</p>
-  </div>
+    </div>
 
         <div className='text-center' >
             <br />
