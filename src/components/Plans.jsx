@@ -1,6 +1,6 @@
 import React from 'react';
-import { TiPlus } from 'react-icons/ti';
-import {BiFoodMenu} from 'react-icons/bi'
+// import { TiPlus } from 'react-icons/ti';
+// import {BiFoodMenu} from 'react-icons/bi'
 
 import kudiye from '../images/chef_kudiye.gif';
 import mundeya from '../images/chef_munda.gif';
@@ -38,12 +38,12 @@ const MiddleSection = () => {
 
           <div class="card mb-4 box-shadow  " style={cc} >
             <div class="card-header">
-              <h3 class="my-0 font-weight-normal" style={{ marginLeft:'56px'}}> Student  <BiFoodMenu  /> </h3>
+              {/* <h3 class="my-0 font-weight-normal" style={{ marginLeft:'56px'}}> Student  <BiFoodMenu  /> </h3> */}
               
               <br />
               <h5> €20 - Tiffin <small> <b> (one time fees) </b></small>  </h5>
                   {/* <center><h3>+</h3> </center> */}
-                    <div style={{paddingLeft:'89px'}}>  <TiPlus /> </div>
+                    {/* <div style={{paddingLeft:'89px'}}>  <TiPlus /> </div> */}
             </div>
             <div class="card-body" style={{paddingTop:0}}>
               <h1 class="card-title pricing-card-title" style={{paddingLeft:40}}> €220 <small class="text-muted">/ mo</small></h1>

@@ -1,8 +1,5 @@
 import React from 'react';
-import {BsFacebook} from 'react-icons/bs'
-import {AiOutlineInstagram} from 'react-icons/ai'
-import {RiTwitterXFill} from 'react-icons/ri'
-import {BsTelegram} from 'react-icons/bs'
+
 
 import mainLogo from'../logo2.png';
 import '../css/Footer.css';
@@ -29,10 +26,10 @@ const Footer = () => {
                   </div>
                 </div>
               <div className='icons'>
-                <a href=""> <BsFacebook  size={25} color='#1877F2' /> </a>
+                {/* <a href=""> <BsFacebook  size={25} color='#1877F2' /> </a>
                  <a href=""> <AiOutlineInstagram  size={25} color='#bc2a8d'/> </a>
                  <a href=""> <RiTwitterXFill  size={25} color='black' /> </a>
-                 <a href=""> <BsTelegram  size={25}  color='#0088cc'/> </a>
+                 <a href=""> <BsTelegram  size={25}  color='#0088cc'/> </a> */}
               </div>
                 <br />
               </div>
