@@ -1,0 +1,13 @@
+.logoImg{
+    padding-left: 8.2vw;
+}
+
+
+@media (max-width:600px) {
+    .logoImg{
+        padding: 0px;
+        margin: 0px;
+    }    
+}
+
+

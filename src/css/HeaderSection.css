@@ -1,0 +1,64 @@
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: 'Gillroy';
+    }
+
+.left{
+   /* background-color : #e1d4d2; */
+   /* margin-left: 2.8vw; */
+   /* margin-left: 113px; */
+   margin-left: 8vw;
+   /* padding-left:; */
+   /* margin-right: 20px; */
+}
+.hungryStyle{
+    color: #609d9f;
+    /* background-color: aqua; */
+    padding-right: 100px;
+    padding-top: 100px;
+    font-weight: 700px;
+    font-size: 4vw;
+}
+
+.tiffinStyle{
+    font-weight:500;
+    font-size: 3.8vw;
+    font-family:'Gillroy'
+}
+.tiffinStyle span{
+    color: orangered;
+}
+
+
+@media (max-width:600px) {
+    .left{
+        padding-top:6%;
+        padding-left:4vw;
+        margin-left: 4vw;
+        font-size: 700;
+        font-weight: 700;
+        /* background-color: aqua; */
+    }    
+    .right img{
+        /* background-color: black; */
+        
+        padding-top: 10vw;
+    }
+    .hungryStyle{
+         /* color: #609d9f; */
+    /* background-color: aqua; */
+    /* padding-right: 100px; */
+    padding-top: 0px;
+    font-weight: 700px;
+    font-size: 50px;
+    }
+
+    .tiffinStyle{
+        font-size:9vw;
+        font-weight:500;
+        /* line-height: 48px; */
+    }
+    
+}

@@ -1,10 +1,5 @@
 
-
-html {
-    position: relative;
-    min-height: 100%;
-  }
-
+  
   .footer {
     position: absolute;
     bottom: 0;
@@ -27,19 +22,30 @@ html {
   -------------------------------------------------- */
   footer {
     padding-top: 30px;
-    color: #131212;
+    background-color: #609d9f;
+    color: #ffffff;
   }
   
   footer a {
-    color: #141313;
+    padding-left: 1.3vw;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 2.5vw;
     text-decoration:none;
   }
   
   footer .icons a:hover , a:focus{
     color: #609d9f;
-    text-decoration: none;
+    /* text-decoration:wavy */
   }
   
+  @media (max-width:600px) {
+    footer a{
+      margin-left: 3.5vw;
+    }
+  }
+
+
 
   /* footer a:hover, footer a:focus */
   footer .form-control {

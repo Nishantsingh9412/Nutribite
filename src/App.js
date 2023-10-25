@@ -4,6 +4,7 @@ import HeadSection from './components/HeadSection';
 import MiddleSection from './components/MiddleSection';
 import Plans from './components/Plans';
 import Footer from './components/Footer';
+import Working from './components/Working';
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
         <Navbar />
         <HeadSection />
         <MiddleSection />
-        <Plans />
+        <Working />
+        {/* <Plans /> */}
         <Footer />
     </div>
   );

@@ -1,0 +1,39 @@
+.main-class{
+    display: flex;
+    flex-direction: column;
+}
+
+.girlImg{
+    margin-left: 12vw;
+}
+.boyImg{
+    margin-left:7vw;
+
+}
+
+.student-plan-card{
+    height: 300px;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
+
+    margin-left: 14.5vw;
+
+}
+
+
+@media (max-width:600px) {
+    .girlImg{
+        margin-left:7vw;
+    }    
+    .boyImg{
+        margin-left:7vw;
+    }
+    .plan-card{
+        margin-top: 2vw;
+        /* margin-left:16vw; */
+    }
+}

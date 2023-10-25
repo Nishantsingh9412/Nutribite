@@ -1,4 +1,51 @@
 /*Estilos generales del boton whatsapp*/
+/* *{
+  padding: 0%;
+  margin: 0%;
+} */
+
+.threeImgs{
+  border: 2px solid rgb(224, 245, 245);
+  border-radius: 5%;
+  /* box-shadow: rgba(240, 104, 20, 0.1) 0px 60px 40px -7px; */
+}
+.threeImgs p{
+  font-size: 1rem;
+  letter-spacing: 0.06em;
+}
+.threeImgs span{
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
+}
+
+.fourCards{
+  /* padding-left:1.1vw; */
+  display: flex;
+  gap: 3.2vw;
+  justify-content: center;
+}
+
+@media (max-width:600px) {
+  .fourCards{
+    padding: 0%;
+    margin: 0%;
+  }
+
+  .threeImgs{
+    margin-left: 6vw;
+    /* margin-right: 6vw; */
+    gap: 10px;
+    justify-content: space-between;
+    /* border: 1px solid teal; */
+    /* border-radius: 10%; */
+  }
+  .threeImgs img{
+    margin-left: 17vw;
+  }
+ 
+}
+
+
 .whatsapp-btn {
     position: fixed;
     bottom: 20px;
