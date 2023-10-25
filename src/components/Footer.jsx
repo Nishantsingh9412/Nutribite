@@ -37,21 +37,40 @@ const Footer = () => {
               <div className="col-md-2">
                   <br /><br />
               </div>
-              <div className="col-md-5">
+              <div className="col-md-5 ">
 
-              <h2 className="text-md-left p-0 m-0" >Contact Us
+              <h2 className="text-md-left p-0 m-0" > Contact Us
                 <hr  className='ease-in' style={{border:'2px solid #609d9f',width: '15%',}}/>
                 </h2>
                 <form>
-                  <label htmlFor='email' className="form-group" />
-                    Email :
-                    <input type="email" className="form-control" id="exampleInputEmail1" placeholder="Enter email" />
-                  <label htmlFor='message' className="form-group pt-3" />
-                    Enter Message :
-                    <textarea className="form-control" id="exampleMessage" placeholder="Message"></textarea>
-                  <label className="form-group text-xs-right" />
-                    <button type="button" className="btn btn-light text-dark   mt-4 mb-4">Send</button>
-                </form>
+  <div class="form-row ">
+    <div class="form-group col-md-8">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder='Enter Email'/>
+    </div>
+  </div>
+  <div class="form-group ">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" />
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Address Line 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" />
+  </div>
+  <div class="form-row">
+    
+    <div class="form-group col-md-4">
+      <label for="inputState">State</label>
+      <select id="inputState" class="form-control">
+        <option selected> Select State...</option>
+        <option value='cologne'>Cologne</option>
+        <option value='comingsoon'>Coming Soon</option>
+      </select>
+    </div>
+    
+  </div>
+  <button type="submit" class="btn btn-light w-100 mb-4 mt-3">Contact us</button>
+</form>
               </div>
             </div>
           </div>
