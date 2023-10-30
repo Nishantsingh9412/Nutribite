@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
+import 'animate.css';
 
 import munchies from '../images/munchies.png';
 import delivery from '../images/Deliv.png';
@@ -10,6 +11,7 @@ import Cooking from '../images/Cooking.gif';
 import Logistics from '../images/Logistics.gif';
 
 
+
 import '../css/MiddleSection.css'
 
 const imageStyle = {
@@ -18,14 +20,14 @@ const imageStyle = {
 }
 
 
-const MiddleSection = () => {
+const MiddleSection = ({text},ref) => {
     return (
 
 
-        <div className='container-fluid pt-5 mt-2 mb-4'>
+        <div ref={ref} className='container-fluid pt-5 mt-2 mb-4'>
             {/* Whatsapp Button  start */}
             <div className="">
-                <a href="https://wa.me/+4917662020701?text=hello+123" target="_blank" className="whatsapp-btn" style={{ color: 'white', textDecoration: 'none' }}>
+                <a href="https://wa.me/+4917662020701?text=hello+i+want+to+order+tiffin" target="_blank" className="whatsapp-btn" style={{ color: 'white', textDecoration: 'none' }}>
                     <i class="fa-brands fa-whatsapp"></i>
                 </a>
             </div>
@@ -39,30 +41,32 @@ const MiddleSection = () => {
 
                 <div className='text-center' >
                     <br />
-                    <h1> How It Works </h1>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, iure deserunt cumque nulla quasi tenetur expedita sint quod illum quos!</span>
+                    <h1> {text} </h1>
+                    <center>
+                    <hr className='animate__animated animate__bounceIn animate__infinite animate__slower how_works_hr'  />
+                    </center>   
                 </div>
-                <div className='fourCards row mt-5 ' >
+                <div className='fourCards row mt-4 ' >
                     <div className='col-sm-4   threeImgs'>
                         <img src={OrderTakes} className='img-fluid' style={imageStyle} alt="" />
                         <p className='font-weight-bold'> Phase 1: Nutribite Takes Order </p>
-                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis maxime repellat ipsum fugiat recusandae laborum expedita voluptate inventore. Necessitatibus, nulla.</span>
+                        <span>Nutribite initiates its tiffin delivery service by accepting customer orders, confirming, processing payments, and providing chat support on Whatsapp.</span>
                     </div>
                     <div className='col-sm-4  threeImgs'>
                         <img src={OrderForward} className='img-fluid' style={imageStyle} alt="" />
                         <p className='font-weight-bold'> Phase 2: Order Forwarding </p>
-                        <span> Order will be forwarded to our freelancer Staff . ----- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, reiciendis.  </span>
+                        <span> Nutribite forwards customer orders to freelance staff for meal preparation and delivery, enhancing efficiency in the meal service process and ensuring timely, quality tiffin deliveries.  </span>
                     </div>
                     <div className='col-sm-4  threeImgs'>
                         <img src={Cooking} className='img-fluid' style={imageStyle} alt="" />
                         <p className='font-weight-bold'> Phase 3 : Cooking </p>
-                        <span> They will cook with some recipe provide by NUTRIBITE . ---- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, possimus? </span>
+                        <span> Freelance staff follow Nutribite's recipes to cook meals, ensuring the consistent quality of tiffin deliveries and meeting customer expectations for taste and nutrition. </span>
                     </div>
 
                     <div className='col-sm-4  threeImgs'>
                         <img src={Logistics} className='img-fluid' style={imageStyle} alt="" />
                         <p className='font-weight-bold' > Phase 4: handing over order to our logistic partner</p>
-                        <span> In morning or in evening orders will be handed over to our logistics partner in particular city. </span>
+                        <span> Nutribite hands over customer orders to city-specific logistics partners for efficient morning or evening deliveries, enhancing the overall tiffin service experience. </span>
                     </div>
                 </div>
             </div>
@@ -70,4 +74,4 @@ const MiddleSection = () => {
     )
 }
 
-export default MiddleSection
+export default forwardRef(MiddleSection)

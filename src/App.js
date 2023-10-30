@@ -9,12 +9,11 @@ import Working from './components/Working';
 function App() {
   return (
     <div className="App">
-      {/* <h2> Hello  </h2> */}
-        <Navbar />
+        {/* <Navbar /> */}
         <HeadSection />
-        <MiddleSection />
-        <Working />
-        {/* <Plans /> */}
+        
+        {/* <MiddleSection /> */}           {/* This is in footer section */}      
+        {/* <Working /> */}                 {/* This is in footer section */}
         <Footer />
     </div>
   );

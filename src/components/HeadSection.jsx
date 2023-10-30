@@ -1,6 +1,7 @@
 import React from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import 'animate.css';
 
 import '../css/HeaderSection.css';
 import chef from '../images/Chef1.gif';
@@ -28,7 +29,7 @@ const inputStyle = {
 // }
 
 const HeadSection = () => {
-    const notify = () => toast.success(' Mail Sent ', {
+    const notify = () => toast.success(' Menu Downloaded ', {
         position: "top-center",
         autoClose: 5000,
         hideProgressBar: false,
@@ -38,20 +39,15 @@ const HeadSection = () => {
         progress: undefined,
         theme: "light",
     });
-    return (
+    return (    
 
         <>
             <div className="container-fluid">
                 <div className="row" >
-                    <div className="col-sm left"  >
-                        <h1 className='hungryStyle' > Hungry!!! </h1>
-                        <h1 className='tiffinStyle'>  Order <span> Tiffin </span>  from Any Place We Will Reach. </h1>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1" >Email address</label>
-                            <input type="email" class="form-control w-75" style={inputStyle} placeholder="Enter email" />
-                            <br />
-                            <button type='submit' className='btn btn-info' onClick={notify}> Order Now </button>
-                            <ToastContainer
+                    <div className="col-sm left "  >
+                        <h1 className='hungryStyle animate__animated animate__bounceIn animate__slow '  > Hungry!!! </h1>
+                        <h1 className='tiffinStyle '>  Order <span className='animate__animated animate__bounceIn animate__slower animate__repeat-2' style={{color:'orangered',padding:0,margin:0}}> Tiffin </span>  from Any Place We Will Reach. </h1>
+                        <ToastContainer
                                 position="top-center"
                                 autoClose={5000}
                                 hideProgressBar={false}
@@ -63,7 +59,21 @@ const HeadSection = () => {
                                 pauseOnHover
                                 theme="light"
                             />
-                        </div>
+                            <center>
+                                <div className='d-flex gx-2 two-btns mt-4 '>
+                                    <div className='p-2'>
+                                        <a href="https://wa.me/+4917662020701?text=hello+i+want+to+order+tiffin" target="_blank"> 
+                                            <button className='btn w-100 ' style={{backgroundColor:'#609D9F', color:'white'}}> Order Now</button>
+                                        </a>
+                                    </div>
+                                    <div className='p-2'>
+                                        {/* <a href="https://wa.me/+4917662020701?text=hello+i+want+to+order+tiffin" target="_blank">  */}
+                                            <button className='btn w-100' onClick={notify} style={{backgroundColor:'#609D9F', color:'white'}}> Download Menu</button>
+                                        {/* </a> */}
+                                    </div>
+                                </div>
+                            </center>
+                            
                     </div>
 
                     <div className="col-sm right ">

@@ -10,9 +10,6 @@
   
   /* Taller footer on small screens */
   @media (max-width: 34em) {
-      body {
-        margin-bottom: 500px;
-      }
       .footer {
         height: 500px;
       }
@@ -26,22 +23,42 @@
     color: #ffffff;
   }
   
-  footer a {
+  footer .anchor {
     padding-left: 1.3vw;
     font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #ffffff;
     line-height: 2.5vw;
     text-decoration:none;
   }
-  
-  footer .icons a:hover , a:focus{
-    color: #609d9f;
-    /* text-decoration:wavy */
+
+  footer li {
+    user-select: 'none';
+    padding-left: 1.3vw;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+    line-height: 2.5vw;
+    text-decoration:none;
   }
+
   
   @media (max-width:600px) {
     footer a{
       margin-left: 3.5vw;
+    }
+    footer li{
+      user-select: 'none';
+      margin-left: 3.3vw;
+      line-height: 6.5vw;
+    }
+    .contact {
+      margin-left: 4vw;
+      margin-bottom: 7vw;
+    }
+
+    .headingContact{
+      margin-left: 25vw;
     }
   }
 

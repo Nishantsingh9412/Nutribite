@@ -27,9 +27,7 @@
     font-size: 3.8vw;
     font-family:'Gillroy'
 }
-.tiffinStyle span{
-    color: orangered;
-}
+
 
 
 @media (max-width:600px) {
@@ -60,5 +58,17 @@
         font-weight:500;
         /* line-height: 48px; */
     }
+    .two-btns{
+        margin-top: 6vw;
+        margin-left: 10vw;
+    }
     
+    .hungryStyle{
+        margin-left: 18vw;
+    }
+    .tiffinStyle{
+        margin-top: 4vw;
+        margin-left: 2vw;
+    }
+
 }
