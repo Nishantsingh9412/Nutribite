@@ -1,16 +1,15 @@
 import React, { useEffect, useRef } from 'react';
 
+import { NavLink } from 'react-router-dom'
 import whiteLogo from '../images/white_logo.png';
-
 import '../css/Footer.css';
-
 import MiddleSection from './MiddleSection';
 import Working from './Working';
 
-const Footer = () => {    
+const Footer = () => {
   const ref = useRef(null);
 
-              //------------------------ Checking scroll position  ------------------------------
+  //------------------------ Checking scroll position  ------------------------------
   // useEffect(() => {
   //   const handleScroll = () => {
   //     const currentScrollPosition = window.scrollY;
@@ -18,7 +17,7 @@ const Footer = () => {
   //   };
 
   //   window.addEventListener('scroll', handleScroll);
-     
+
   //   return () => {
   //     window.removeEventListener('scroll', handleScroll);
   //   };
@@ -33,7 +32,7 @@ const Footer = () => {
   };
 
   const scrollToMid = () => {
-    ref.current?.scrollIntoView({behavior:'smooth'})
+    ref.current?.scrollIntoView({ behavior: 'smooth' })
   };
 
   const scrollToPlans = () => {
@@ -59,32 +58,40 @@ const Footer = () => {
   //     behavior: 'smooth',
   //   });
   // };
-  
+
   return (
-    
+
     <>
-        <MiddleSection ref={ref} text={"How It Works"}/>
-        <Working />
+      <MiddleSection ref={ref} text={"How It Works"} />
+      <Working />
 
       <div className='mt-5'>
         <footer classNameName='footer'>
           <div className="container">
             <center>
-                <h2 className='p-0 m-0 headingContact'> Contact Us
-                  <hr className='ease-in' style={{ border: '2px solid #ffffff', width: '12%', }} />
-                </h2>
+              <h2 className='p-0 m-0 headingContact'> Contact Us
+                <hr className='ease-in' style={{ border: '2px solid #ffffff', width: '12%', }} />
+              </h2>
             </center>
             <div className="row">
               <div className="col-md-5">
 
-                <img src={whiteLogo} alt="" height={120} />
+                <img className='footer-1-img' src={whiteLogo} alt="" height={120} />
 
                 <div className="row " >
                   <div className="col-6">
-                    <ul className="list-unstyled">
-                      <li className='' style={{cursor:'pointer',userSelect: 'none'}} onClick={scrollToTop}> Home  </li>
-                      <li className='' style={{cursor:'pointer',userSelect: 'none'}} onClick={scrollToMid}> How it Works  </li>
-                      <li className='' style={{cursor:'pointer',userSelect: 'none'}} onClick={scrollToPlans}> Plans  </li>
+                    <ul className="p-2 m-2 list-unstyled text-md  g-2 list-group">
+                      <li className='list-group mb-1' style={{ cursor: 'pointer', userSelect: 'none' }} onClick={scrollToTop}> Home  </li>
+                      <li className='list-group mb-1 text-wrap' style={{ cursor: 'pointer', userSelect: 'none' }} onClick={scrollToMid}> How it works  </li>
+                      <li className='list-group mb-1' style={{ cursor: 'pointer', userSelect: 'none' }} onClick={scrollToPlans}> Plans  </li>
+                      
+                     <a href="https://wa.me/+4917647268120?text=Hello+I+Want+To+Become+Your+Partner" className='list-group mb-1' style={{textDecoration:'none', color:'#ffffff',fontWeight:500,fontFamily:'inherit'}} target="_blank"> 
+                     Become Partner
+                     </a>  
+                      <NavLink className='p-0 m-0' to='/imprints' style={{ cursor: 'pointer', userSelect: 'none', textDecoration: 'none' }} >
+                        <li className=' list-group mb-1 imprints-f-1'> Imprints  </li>
+                      </NavLink>
+
                       {/* <li className='' style={{cursor:'pointer',userSelect: 'none'}} onClick={scrollToBottom}> Contact us </li> */}
                     </ul>
                   </div>
@@ -102,13 +109,15 @@ const Footer = () => {
               </div>
               <div className="col-md-5 contact">
 
-              <h4 className="text-md-left p-0 m-0 " > Get in touch
+                <h4 className="text-md-left p-0 m-0 " > Get in touch
                   <hr className='ease-in' style={{ border: '2px solid #ffffff', width: '15%', }} />
                 </h4>
-                <a href="mailto:nutribite@protonmail.com" className=' anchor p-0 m-0' style={{textDecoration:'none'}}>   <i class="fa-solid fa-envelope"> </i> &nbsp;nutribite@protonmail.com  </a>
+                <a href="mailto:nutribite@protonmail.com" className=' anchor p-0 m-0' style={{ textDecoration: 'none' }}>   <i class="fa-solid fa-envelope"> </i> &nbsp;nutribite@protonmail.com  </a>
                 <br />
-                <a href="https://wa.me/+4917662020701?text=hello+i+want+to+order+tiffin" target='_blank' className=' anchor p-0 m-0' style={{textDecoration:'none'}}>   <i class="fa-brands fa-whatsapp"> </i> &nbsp;+91-11000 - 55004  </a>
-
+                <a href="https://wa.me/+4917647268120?text=Hello+I+Want+To+Order+Tiffin" target='_blank' className=' anchor p-0 m-0' style={{ textDecoration: 'none' }}>   <i class="fa-brands fa-whatsapp"> </i> &nbsp; +49-176-47268120  </a>
+                <div>
+                  <i class="fa-solid fa-house p-"> </i> &nbsp; Rusanov Logistics UG (hb) , HRB114200
+                </div>
                 {/* <form action='#' method='POST' style={{ fontWeight: '600' }}>
                   <div class="form-row ">
                     <div class="form-group col-md-12">

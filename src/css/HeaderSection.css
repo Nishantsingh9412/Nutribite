@@ -13,11 +13,14 @@
    /* padding-left:; */
    /* margin-right: 20px; */
 }
+.nutribite-logo{
+    padding-right: 100px;
+    padding-top: 100px;
+}
+
 .hungryStyle{
     color: #609d9f;
     /* background-color: aqua; */
-    padding-right: 100px;
-    padding-top: 100px;
     font-weight: 700px;
     font-size: 4vw;
 }
@@ -44,11 +47,14 @@
         
         padding-top: 10vw;
     }
+    .nutribite-logo{
+        padding-top: 0px;
+        
+    }
     .hungryStyle{
          /* color: #609d9f; */
     /* background-color: aqua; */
     /* padding-right: 100px; */
-    padding-top: 0px;
     font-weight: 700px;
     font-size: 50px;
     }
@@ -69,6 +75,10 @@
     .tiffinStyle{
         margin-top: 4vw;
         margin-left: 2vw;
+    }
+
+    .logo-headsection{
+        margin-left: 31vw;
     }
 
 }

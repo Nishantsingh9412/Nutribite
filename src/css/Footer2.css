@@ -1,13 +1,4 @@
 
-  
-  .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    /* Set the fixed height of the footer here */
-    height: 300px;
-  }
-  
   /* Taller footer on small screens */
   @media (max-width: 34em) {
       .footer {
@@ -34,6 +25,27 @@
 
   footer li {
     user-select: 'none';
+    /* padding-left: 1.3vw; */
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+    line-height: 2.5vw;
+    text-decoration:none;
+  }
+  .partner{
+    user-select: 'none';
+    /* padding-left: 1.3vw; */
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 1.25vw;
+    color: #ffffff;
+    line-height: 2.5vw;
+    text-decoration:none;
+  }
+
+
+  .imprints-f-2{
+    user-select: 'none';
     padding-left: 1.3vw;
     font-weight: 500;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -42,17 +54,17 @@
     text-decoration:none;
   }
 
-  .imprints-f-1{
-    user-select: 'none';
-    /* padding-left: 1.3vw; */
-    font-weight: 500;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #ffffff;
-    line-height: 2.5vw;
-    text-decoration:none;
+  .ul-items-footer2{
+    line-height: 1.5vw;
+    font-weight: 200;
+    margin-left: 1vw;
   }
 
-  
+  .footer-2-img{
+    margin-left: 1vw;
+  }
+
+
   @media (max-width:600px) {
     footer a{
       margin-left: 3.5vw;
@@ -62,20 +74,28 @@
       margin-left: 3.3vw;
       line-height: 6.5vw;
     }
-    .imprints-f-1{
+    .partner{
       user-select: 'none';
-      margin-left: 3.4vw;
+      margin-top: 2.2vw;
+      margin-left: 4.6vw;
+      line-height: 4.5vw;
+    }
+    .imprints-f-2{
+      user-select: 'none';
+      margin-left: 3.5vw;
       line-height: 6.5vw;
     }
     .contact {
       margin-left: 4vw;
       margin-bottom: 7vw;
     }
-    .footer-1-img{
-      margin-left: 2vw;
-    }
+
     .headingContact{
       margin-left: 25vw;
+    }
+
+    .footer-2-img{
+      margin-left:0.75vw;
     }
   
   }

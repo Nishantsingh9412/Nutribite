@@ -4,9 +4,6 @@ import '../css/Working.css';
 import kudiye from '../images/chef_kudiye.gif';
 import mundeya from '../images/chef_munda.gif';
 
-
-
-
 const Working = () => {
   return (
     <>  
@@ -27,10 +24,8 @@ const Working = () => {
           <div className="card" style={{border:'1.2px solid teal'}}>
             {/* <img src="https://picsum.photos/200/300" className="card-img-top" alt="..." /> */}
             <div className="card-body " >
-
                 <h5 className="card-title text-center">Student Plan &nbsp; <i className="fa-solid fa-school" ></i></h5>
               <hr style={{ border: '1px solid #609d9f ' }} />
-
               <h3 className='text-center'>&euro;20 Tiffin fees (one time fees) </h3>
               <h3 className='text-center-plus'> + </h3>
               <h3 className='text-center'> &euro;220 / mo </h3>
@@ -42,8 +37,8 @@ const Working = () => {
 
               {/* <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> */}
             </div>
-            <a href="https://wa.me/+4917662020701?text=hello+i+want+to+order+tiffin" target="_blank">
-            <button className='btn btn-info w-100'> Order now </button>
+            <a href="https://wa.me/+4917647268120?text=Hello+I+Want+To+Order+Tiffin" target="_blank">
+            <button className='btn w-100 text-white' style={{background:'#609d9f'}}> Order now </button>
               </a>
           </div>
         </div>

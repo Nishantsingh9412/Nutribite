@@ -27,7 +27,7 @@ const MiddleSection = ({text},ref) => {
         <div ref={ref} className='container-fluid pt-5 mt-2 mb-4'>
             {/* Whatsapp Button  start */}
             <div className="">
-                <a href="https://wa.me/+4917662020701?text=hello+i+want+to+order+tiffin" target="_blank" className="whatsapp-btn" style={{ color: 'white', textDecoration: 'none' }}>
+                <a href="https://wa.me/+4917647268120?text=Hello+I+Want+To+Order+Tiffin" target="_blank" className="whatsapp-btn" style={{ color: 'white', textDecoration: 'none' }}>
                     <i class="fa-brands fa-whatsapp"></i>
                 </a>
             </div>
